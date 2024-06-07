@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-6</title>
+
+</head>
+<body>
+    <script>
+        //Task1
+        document.write('<b> Task 1 </b>');
+
+        var aValue = 10;
+
+        document.write('</br> Result:');
+        document.write('</br> The value of a is: ' + aValue);
+
+        document.write('</br>');
+
+        document.write('</br> The value of ++a is: ' + ++aValue);
+        document.write('</br> The value of a is: ' + aValue);
+
+        document.write('</br>');
+
+        document.write('</br> The value of a++ is: ' + aValue++);
+        document.write('</br> The value of a is: ' + aValue);
+
+        document.write('</br>');
+
+        document.write('</br> The value of --a is: ' + --aValue);
+        document.write('</br> The value of a is: ' + aValue);
+
+        document.write('</br>');
+
+        document.write('</br> The value of a-- is: ' + aValue--);
+        document.write('</br> The value of a is: ' + aValue);
+
+        document.write('</br>');
+
+        //Task 2
+        document.write('</br> <b> Task 2 </b>');
+
+        var a = 2, b = 1;
+
+        document.write('</br> a is: ' + a)
+        document.write('</br> b is: ' + b)
+
+        var result = --a - --b + ++b + b--;
+
+        document.write('</br> Result is: ' + result)
+
+        document.write('</br> --a : ');
+        document.write(--a);
+
+        document.write('</br> --a - --b : ');
+        document.write(--a - --b);
+
+        document.write('</br> --a - --b + ++b : ');
+        document.write(--a - --b + ++b);
+
+        document.write('</br> --a - --b + ++b + b-- : ');
+        document.write(--a - --b + ++b + b--);
+
+        document.write('</br>');
+
+        //Task3
+        document.write('</br> <b> Task 3 </b>');
+
+        var greetUser = prompt("Hey! What's your name?");
+        var greet = alert('Hi, ' + greetUser + ' welcome to the website!');
+
+        document.write('</br> Hi ' + greetUser + ' welcome to the website!');
+
+        document.write('</br>');
+
+        //Task5
+        document.write('</br> <b> Task 5 </b>');
+
+        var numb1 = prompt('Add any number for multiplication (Step 1)');
+        var numb2 = prompt('Add any number you want to multipliy by with (Step 2)', 5);
+        var numbResult = numb1 * numb2
+        alert('Result: ' + numbResult + '(Task 5)');
+
+        document.write('</br> Answer: ' + numbResult);
+
+        document.write('</br>');
+
+        //Task6
+        document.write('</br> <b> Task 6 </b>');
+
+        var subject1 = prompt('Add a First Subject', 'English');
+        var subject2 = prompt('Add a Second Subject', 'Math');
+        var subject3 = prompt('Add a Third Subject', 'Urdu');
+
+        var obtainedMarks1 = prompt('Enter your ' + subject1 + "'s Marks", 35);
+        var obtainedMarks2 = prompt('Enter your ' + subject2 + "'s Marks", 53);
+        var obtainedMarks3 = prompt('Enter your ' + subject3 + "'s Marks", 42);
+        var allObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3
+
+        var result1 = obtainedMarks1 / 100 * 100
+        var result2 = obtainedMarks2 / 100 * 100
+        var result3 = obtainedMarks3 / 100 * 100
+        var allResult = allObtainedMarks / 300 * 100
+
+
+        document.write('</br> Hey! ' + greetUser + ' Here is your result :)');
+        document.write('<br>' + subject1 + ': ' + obtainedMarks1 + ' / 100 - Percentage: ' + result1 + '%');
+        document.write('<br>' + subject2 + ': ' + obtainedMarks2 + ' / 100 - Percentage: ' + result2 + '%');
+        document.write('<br>' + subject3 + ': ' + obtainedMarks3 + ' / 100 - Percentage: ' + result3 + '%');
+        document.write('<br> Total: ' + allObtainedMarks + ' - Percentage: ' + allResult + '%');
+
+
+
+        
+    </script>
+</body>
+</html>
